@@ -1,11 +1,11 @@
 ﻿@using EntityLayer.Concrete
 @model List<Reservation>
 @{
-    ViewData["Title"] = "MyCurrentReservation";
+    ViewData["Title"] = "MyApprovalReservation";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h1>Aktif Rezervasyonlarım </h1>
+<h1>Onay Bekleyen Rezervasyonlar</h1>
 
 
 <table class="table table-bordered">
@@ -16,8 +16,8 @@
         <th>Rezervasyon Tarihi</th>
         <th>Durum</th>
     </tr>
-    @foreach (var item in Model)
-    {
+@foreach (var item in Model)
+{
 
         <tr>
             <td>@item.AppUserId</td>
@@ -27,6 +27,6 @@
             <td>@item.Status</td>
         </tr>
 
-    }
-
+}
+    
 </table>
