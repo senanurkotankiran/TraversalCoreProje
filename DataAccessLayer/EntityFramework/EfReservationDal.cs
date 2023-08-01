@@ -13,6 +13,7 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfReservationDal : GenericRepository<Reservation>, IReservationDal
     {
+       
         public List<Reservation> GetListWithReservationByAccepted(int id)
         {
             using (var context = new Context())

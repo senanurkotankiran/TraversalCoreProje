@@ -20,13 +20,22 @@ namespace TraversalCoreProje.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Index sayfası çağrıldı");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.LogInformation("Privacy sayfası çağrıldı");
             return View();
         }
+
+        public IActionResult Test()
+        {
+            _logger.LogInformation("Test sayfası çağrıldı");
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
