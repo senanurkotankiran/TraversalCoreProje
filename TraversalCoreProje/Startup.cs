@@ -1,25 +1,16 @@
-using BusinessLayer.Abstract;
-using BusinessLayer.Concrete;
 using BusinessLayer.Container;
-using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
-using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Serilog;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using TraversalCoreProje.Models;
 
 namespace TraversalCoreProje
@@ -49,6 +40,13 @@ namespace TraversalCoreProje
 
             
             services.ContainerDependencies();
+
+            services.AddAutoMapper(typeof(Startup));
+
+            services.CustomValidator();
+
+
+            services.AddControllersWithViews().AddFluentValidation();
 
             services.AddControllersWithViews();
 
