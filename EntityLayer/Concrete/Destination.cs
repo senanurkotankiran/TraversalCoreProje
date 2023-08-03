@@ -12,7 +12,7 @@ namespace EntityLayer.Concrete
         [Key]
         public int DestinationID { get; set; }
         public string City { get; set; }
-        //konaklama suresi
+        
         public string DayNight { get; set; }
         public double Price { get; set; }
         public string Image { get; set; }
