@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
 }
 
 <h1>CQRS Tur Verileri</h1>
@@ -19,16 +20,17 @@
     </tr>
     @foreach (var item in Model)
     {
+        count++;
         <tr>
-            <td>@item.id</td>
+            <td>@count</td>
             <td>@item.city</td>
             <td>@item.daynight</td>
             <td>@item.price</td>
             <td>@item.capacity</td>
-            <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Admin/DestinationCQRS/DeleteDestination/@item.id" class="btn btn-outline-danger">Sil</a></td>
             <td><a href="/Admin/DestinationCQRS/GetDestination/@item.id" class="btn btn-outline-success">Güncelle</a></td>
 
         </tr>
     }
 </table>
-<td><a href="#" class="btn btn-outline-primary">Yeni Tur Rotası Ekle</a></td>
+<td><a href="/Admin/DestinationCQRS/AddDestination/" class="btn btn-outline-primary">Yeni Tur Rotası Ekle</a></td>
