@@ -51,7 +51,7 @@ namespace TraversalCoreProje.Areas.Admin.Controllers
 
         public IActionResult ReservationUser(int id)
         {
-            var values = _reservationService.GetListWithReservationByAccepted(id);
+            var values = _reservationService.TGetListWithReservationByAccepted(id);
             return View(values);
         }
 
