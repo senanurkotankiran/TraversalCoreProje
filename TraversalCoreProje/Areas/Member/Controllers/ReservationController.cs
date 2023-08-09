@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
@@ -14,13 +15,16 @@ namespace TraversalCoreProje.Areas.Member.Controllers
     public class ReservationController : Controller
     {
         DestinationManager destinationManager = new DestinationManager(new EfDestinationDal());
+
         ReservationManager reservationManager = new ReservationManager(new EfReservationDal());
+
         private readonly UserManager<AppUser> _userManager;
 
         public ReservationController(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
         }
+
 
         public async Task<IActionResult> MyCurrentReservation()
         {
