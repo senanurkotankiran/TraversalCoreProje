@@ -1,5 +1,7 @@
 #Tatil Rezervasyonu Web Sitesi Projesi
+
 Bu proje, tatil rezervasyonu alanında faaliyet gösteren bir web sitesini temsil etmektedir. Sitede, çeşitli tatil seçeneklerinin listelendiği, kullanıcıların bu tatil seçeneklerinde rezervasyon yapabildiği, kullanıcıların kişisel hesabına ait bilgilere erişebildiği ve admin kullanıcısının da site içerisinde CRUD işlemleri gerçekleştirebildiği üç farklı tasarıma sahip bir projedir.
+
 #Özellikler
 •	Farklı tatil seçeneklerinin görüntülendiği bir ana sayfa.
 •	Kullanıcıların seçtikleri tatil seçeneklerinde rezervasyon yapabilmesi.
@@ -8,6 +10,7 @@ Bu proje, tatil rezervasyonu alanında faaliyet gösteren bir web sitesini temsi
 •	Kullanıcıların yalnızca giriş yapmış kullanıcılar tarafından rezervasyon yapılabilmesi kontrolü.
 •	Admin kullanıcısının site yönetimi üzerinde CRUD (Oluştur, Oku, Güncelle, Sil) işlemlerini gerçekleştirebilmesi.
 •	Admin tarafından rol atamalarının yapılması.
+
 ##Kullanılan Teknolojiler
 Bu proje Ajax, Api, Api Consume, Google Chart, Raporlama, Unit of Work, CQRS Design Pattern, Repository Design Pattern, Fluent Validaton, Auto Mapper, DI, DTO, Identity, Login, Register, Rolleme, Dashboard, Linq, SignalR, Area, View Component, Include Metotlar, Hata Sayfaları, Mail Gönderme, Şifre Yenileme, Mail Aktivasyonu, Rapid Api, MediatR, Pivot Table, Trigger, Çoklu Dil Desteği ve birçok konu başlığını içeriyor.
 
