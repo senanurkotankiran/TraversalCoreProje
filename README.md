@@ -1,8 +1,8 @@
-#Tatil Rezervasyonu Web Sitesi Projesi
+# Tatil Rezervasyonu Web Sitesi Projesi
 
 Bu proje, tatil rezervasyonu alanında faaliyet gösteren bir web sitesini temsil etmektedir. Sitede, çeşitli tatil seçeneklerinin listelendiği, kullanıcıların bu tatil seçeneklerinde rezervasyon yapabildiği, kullanıcıların kişisel hesabına ait bilgilere erişebildiği ve admin kullanıcısının da site içerisinde CRUD işlemleri gerçekleştirebildiği üç farklı tasarıma sahip bir projedir.
 
-#Özellikler
+# Özellikler
 •	Farklı tatil seçeneklerinin görüntülendiği bir ana sayfa.
 •	Kullanıcıların seçtikleri tatil seçeneklerinde rezervasyon yapabilmesi.
 •	Kullanıcı hesaplarının oluşturulması ve yönetilmesi.
@@ -11,10 +11,10 @@ Bu proje, tatil rezervasyonu alanında faaliyet gösteren bir web sitesini temsi
 •	Admin kullanıcısının site yönetimi üzerinde CRUD (Oluştur, Oku, Güncelle, Sil) işlemlerini gerçekleştirebilmesi.
 •	Admin tarafından rol atamalarının yapılması.
 
-##Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 Bu proje Ajax, Api, Api Consume, Google Chart, Raporlama, Unit of Work, CQRS Design Pattern, Repository Design Pattern, Fluent Validaton, Auto Mapper, DI, DTO, Identity, Login, Register, Rolleme, Dashboard, Linq, SignalR, Area, View Component, Include Metotlar, Hata Sayfaları, Mail Gönderme, Şifre Yenileme, Mail Aktivasyonu, Rapid Api, MediatR, Pivot Table, Trigger, Çoklu Dil Desteği ve birçok konu başlığını içeriyor.
 
-##Proje Geliştirme Aşamaları
+## Proje Geliştirme Aşamaları
 1.	Katmanlar Oluşturuldu: Proje katmanları ayrıldı ve bu katmanlar arasındaki işlevsel ayrım sağlandı. (EntityLayer, DataAccesLayer, BusinessLayer, UI)
 2.	Veritabanı İşlemleri ve Migration: Code First yöntemi kullanılarak veritabanı işlemleri gerçekleştirildi. Veri erişimi için DataAccesLayer içinde Context sınıfı tanımlandı ve migration işlemi yapıldı.
 3.	Generic Interface ve Veri Erişimi: DataAccesLayer ve BusinessLayer arasında Generic Interface'ler kullanılarak veri erişimi sağlandı.
